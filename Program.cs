@@ -37,6 +37,15 @@ class Program
         //Console.WriteLine("\n\nNon-Veg Meal");
         //nonVegMeal.ShowMeal();
         //Console.WriteLine("Total Cost: " + nonVegMeal.GetCost());
+        PersonBuilder builder = new PersonBuilder();
+        Person person = builder
+            .FirstName("Bob")
+            .LastName("Dylan")
+            //.NAS("1234567890")
+            .Phone("514-937-0707")
+            .Age(33)
+            .Build();
+        Console.WriteLine(person);
         #endregion
     }
 
