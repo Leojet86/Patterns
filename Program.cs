@@ -1,4 +1,5 @@
-﻿using Patterns.Factory;
+﻿using Patterns.Builder;
+using Patterns.Factory;
 using Patterns.Prototype;
 
 namespace Patterns;
@@ -24,9 +25,21 @@ class Program
         //shape1.Draw(); 
         #endregion
 
+        #region Builder Pattern
+        //MealBuilder mealBuilder = new MealBuilder();
 
+        //Meal vegMeal = mealBuilder.PrepareVegMeal();
+        //Console.WriteLine("Veg Meal");
+        //vegMeal.ShowMeal();
+        //Console.WriteLine("Total Cost: " + vegMeal.GetCost());
+
+        //Meal nonVegMeal = mealBuilder.PrepareMeal();
+        //Console.WriteLine("\n\nNon-Veg Meal");
+        //nonVegMeal.ShowMeal();
+        //Console.WriteLine("Total Cost: " + nonVegMeal.GetCost());
+        #endregion
     }
 
 
-    
+
 }
