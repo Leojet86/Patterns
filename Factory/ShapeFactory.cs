@@ -10,19 +10,9 @@ namespace Patterns.Factory
     /// In Factory pattern, we create object without exposing the creation 
     /// logic to the client and refer to newly created object using a common interface.
     /// </summary>
-    public class ShapeFactory
+    public class ShapeFactory : AbstractFactory
     {
-
-        public enum Shape
-        {
-            Rectangle,
-            Circle,
-            Square,
-            Triangle
-        }
-
-
-        public IShape GetShape(Shape type)
+        public override IShape GetShape(Shape type)
         {
             // One of the Only acceptable case where a switch case, or big if statement should be use.
             switch (type)
@@ -32,9 +22,8 @@ namespace Patterns.Factory
                 case Shape.Circle:
                     return new Circle();
                 case Shape.Square:
-                    return new Square();
                 default:
-                    return null;
+                    return new Square();
             }
         }
     }

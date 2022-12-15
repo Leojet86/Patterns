@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Patterns.Factory
 {
-    //Interface
-    public interface IShape
+    public class RoundedSquare : IShape
     {
-
-        public void Draw();
-
+        public void Draw()
+        {
+            Console.WriteLine("Rounded square");
+        }
     }
 }
